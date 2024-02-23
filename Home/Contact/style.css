@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
+.main {
+    height: 200vh;
+    background-color: black;
+
+}
+
+.container {
+    width: 60%;
+    height: 200vh;
+    margin: auto;
+    /* background-color: rgba(240, 248, 255, 0.178); */
+}
+
+.head-bx {
+    height: 30vh;
+    /* background-color: rgba(255, 0, 0, 0.158); */
+    position: relative;
+}
+
+.big-bg {
+    position: absolute;
+    bottom: 0;
+    left: 300px;
+    font-weight: 800;
+    font-size: 8em;
+    color: rgba(255, 255, 255, 0.123);
+
+}
+
+.text {
+    position: relative;
+    top: 10vh;
+    margin: auto;
+}
+
+.head-text {
+    font-size: 3em;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+.para-text {
+    margin: auto;
+    font-size: .9em;
+    color: gray;
+    text-align: center;
+    position: relative;
+    top: 15px;
+    width: 55%;
+}
+
+/* ---------------------------------- */
+
+
+.tabs-bx {
+    height: 25vh;
+   /* background-color: red; */
+    /* border: 1px solid; */
+}
+
+.tab-card {
+    /* border: 1px solid; */
+    width: 14vw;
+    margin-left: 8px;
+    height: 25vh;
+    display: inline-block;
+    text-align: center;
+}
+
+.fa-solid {
+    position: relative;
+    top: 20px;
+    /* border: 1px solid ; */
+    color: orange;
+    font-size: 1.3em;
+    padding: 35px;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.13);
+}
+
+.tab-name {
+    font-size: 1em;
+    font-weight: 600;
+    position: relative;
+    top: 40px;
+}
+
+.tab-detail {
+    color: gray;
+    position: relative;
+    top: 60px;
+    font-size: .8em;
+    padding: 0 10px ;
+}
+
+.massage-container{
+    height: 60vh;
+    position: relative;
+    top: 150px;
+    /* background-color: antiquewhite; */
+}
+
+.image-bx{
+    position: absolute;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-image: url(Image/bg_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.input-bx{
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: rgb(230, 230, 230);
+    
+}
+
+.form-bx{
+    /* border: 1px solid red; */
+    position: relative;
+    top: 40px;
+}
+
+.text-input{
+    display: block;
+    padding-left: 10px;
+    width: 80%;
+    height: 40px;
+    border: 1px solid rgba(128, 128, 128, 0.486);
+    border-radius: 3px;
+    margin-bottom: 10px;
+    position: relative;
+    left: 50px;
+}
+.message-area{
+    display: block;
+    padding-left: 10px;
+    width: 80%;
+    border: 1px solid rgba(128, 128, 128, 0.486);
+    border-radius: 3px;
+    margin-bottom: 10px;
+    position: relative;
+    left: 50px;
+}
+
+.send-btn{
+    border: none;
+    width: 160px;
+    height: 40px;
+    background-color: orange;
+    color: black;
+    letter-spacing: 2px;
+    font-size: .7em;
+    font-weight: 600;
+    border-radius: 50px;
+    position: relative;
+    left: 50px;
+    top: 20px;
+}
