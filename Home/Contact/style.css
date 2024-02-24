@@ -170,3 +170,72 @@
     left: 50px;
     top: 20px;
 }
+
+.footer-bx{
+    /* border: 1px solid white; */
+    height: 50vh;
+    position: relative;
+    top: 25vh;
+}
+
+.table-bx{
+    /* border: 1px solid; */
+    border-collapse: collapse;
+}
+
+td{
+    /* border: 1px solid; */
+    width: 300px;
+    height: 5vh;
+    padding-left: 10px;
+    color: gray;
+    font-size: .9em;
+}
+
+th{
+    font-size: 1.3em;
+    font-weight: 700;
+    text-align: left;
+
+    /* border: 1px solid; */
+    width: 300px;
+    height: 8vh;
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+
+.tabs-button-bx{
+    /* border: 1px solid ; */
+    height: 60px;
+    width: 15vw;
+}
+
+.tabs{
+    display: inline-block;
+    /* border: 1px solid; */
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background-color: rgba(128, 128, 128, 0.253);
+    margin-right: 8px;
+}
+
+.fa-brands{
+    font-size: 1.5em;
+    position: relative;
+    top: 14px;
+    left: 15px;
+}
+
+.footer{
+    height: 7vh;
+    /* border: 1px solid red; */
+    position: relative;
+}
+.lastline{
+    position: absolute;
+    bottom: 0;
+    left: 300px;
+    font-size: .8em;
+    color: gray;
+}
