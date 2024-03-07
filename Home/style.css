@@ -1,126 +1,268 @@
-*{
+* {
     margin: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
 }
 
-.Home-Page{
-    width: 100%;
-    height: 100vh;
+body {
     background-color: black;
     color: white;
 }
 
-.nav-bar{
-    width: 60%;
-    min-width: 800px;
-    height: 10vh;
+.fix-width {
+    max-width: 1400px;
     margin: auto;
 }
 
-.nav-logo{
-    font-size: 1.5em;
-    float: left;
-    margin-top: 1em;
+.nav-bar {
+    /* border-bottom: 1px solid red; */
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* position: sticky; */
+    top: 0;
+    border-bottom: 1px solid gray;
 }
 
-.nav-tabs{
-    float: right;
+.nav-bar .nav-logo {
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    color: rgb(221, 221, 221);
+}
+
+.nav-bar .tab-bx nav {
     display: inline-block;
-    font-size: 1.1em;
-    margin-top: 1.77em;
-    margin-left: 1.8em;
-    color: white;
+    margin-left: 1.8rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: gray;
+    cursor: pointer;
+    position: relative;
+    transition: .2s ease;
 }
 
-.nav-tabs:hover{
-    border-bottom: 2px solid orange;
-    color: rgb(255, 190, 70);
+.nav-bar .tab-bx nav:hover {
+    color: orange;
+    text-decoration: underline 2px;
+    text-underline-offset: 10px;
 }
 
-a:link{
+a:link {
     text-decoration: none;
 }
+
 
 /* -------------------------------- */
 
 .Home-Content-Bx{
-    width: 60%;
-    height: 90vh;
-    margin: auto;
-    /* background-color: rgba(240, 248, 255, 0.048); */
-
+    height: calc(1080px - 90px);
+    display: flex;
+    /* border-bottom: 1px solid red; */
 }
 
-.text-bx{
+.Home-Content-Bx .text-bx{
+    /* border: 1px solid white; */
     width: 40%;
-    height: 50vh;
-    /* background-color: rgba(139, 139, 139, 0.096); */
-    float: left;
-    margin: 9em 0 0 0;
+    position: relative;
 }
 
-.line1{
+.Home-Content-Bx .text-bx .container{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.Home-Content-Bx .text-bx p:first-child{
     color: orange;
-    font-size: 0.98em;
-    letter-spacing: 3px;
+    font-weight: 600;
+    letter-spacing: .2rem;
+    font-size: 1.3rem;
 }
 
-.line2{
-    font-size: 4em;
+.Home-Content-Bx .text-bx p:nth-of-type(2){
+    font-size: 4.5rem;
     font-weight: 700;
-    line-height: 1.3em;
-    margin-top: 0.3em;
+    line-height: 1.2;
+    word-spacing: 10px;
+}
+
+.Home-Content-Bx .text-bx span:only-child{
+    color: orange;
+}
+
+.Home-Content-Bx .text-bx p:nth-of-type(3){
+    font-weight: 400;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    color: rgb(223, 223, 223);
+}
+
+.Home-Content-Bx .text-bx button:nth-of-type(1){
+    border: none;
+    width: 110px;
+    height: 40px;
+    border-radius: 2rem;
+    background-color: orange;
+    color: black;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: .8rem;
+    margin-top: 10px;
+}
+
+.Home-Content-Bx .text-bx button:nth-of-type(2){
+    border: none;
+    width: 120px;
+    height: 40px;
+    border-radius: 2rem;
+    border: 1px solid  rgb(223, 223, 223);
+    background-color: transparent;
+    color:  rgb(223, 223, 223);
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: .8rem;
+    margin-top: 10px;
+}
+
+.Home-Content-Bx .image-bx{
+    /* border: 1px solid white; */
+    width: calc(100% - 40%);
+
+    background-image: url(Image/bg_1.jpg);
+    background-repeat: no-repeat;
+    background-size: 600px;
+    background-position: center right;
+}
+
+/* --------------------------------------------------- */
+
+
+
+
+
+.About-Contener{
+    /* border: 1px solid  burlywood; */
+    height: calc(1000px - 90px);
+    display: flex;
+    justify-content: space-around
+}
+
+
+.About-Contener .About-image-bx{
+    width: 40%;
+    /* height: auto; */
+    /* float: left; */
+    background-image: url(image/bg_1.jpg);
+    background-size: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.About-Contener .About-text-bx{
+    width: calc(100% - 40%);    
+}
+
+.About-Contener .About-text-bx .upper-bx{
+    width: 100%;
+    height: 20rem;
+    position: relative;
+}
+
+
+/* .bg-text{
+    height: inherit;
+    background-image: url(image/bg_2-white.png);
+    background-repeat: no-repeat;
+    background-size: 25em;
+    background-position: left top;
+    opacity: 10%;
+} */
+
+.About-Contener .About-text-bx .upper-bx {
+    /* border: 3px dashed red; */
+}
+
+.upper-bx .bg-text{
+    position: absolute;
+    font-size: 8rem;
+    font-weight: 700;
+    top: 80px;
+    opacity: 10%;
+}
+
+.About-text-bx .upper-bx p:nth-of-type(2){
+    position: absolute;
+    z-index: 10;
+    top: 5.5rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.About-text-bx .upper-bx p:nth-of-type(3){
+    position: absolute;
+    z-index: 10;
+    top: 10.5rem;
+    color: rgb(207, 207, 207);
+    font-size: 1rem;
+    /* font-weight: 200; */
+}
+
+
+
+.info-bx{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+table{
+    text-align: left;
+    /* border: 1px solid white; */
+    height: 250px;
+
+}
+
+th{
+    font-weight: 600;
+}
+
+td{
+    padding-left: 30px;
+    font-weight: 400;
+    color: gray;
+    font-size: 0.9em;
+}
+
+.extra{
+    margin-top: 2.5rem;
+}
+
+
+.info-line{
+    margin-bottom: 1em;
+    font-size: 1.2em;
 }
 
 span{
     color: orange;
+    font-weight: 600;
 }
 
-.line3{
-    margin-top: 1em;
-    font-size: 2em;
-    font-weight: 300;
-    letter-spacing: 0em;
-}
-
-.btn1{
+.btn{
     border: none;
     background-color: orange;
-    color: black;
-    width: 110px;
+    width: 150px;
     height: 50px;
     border-radius: 40px;
-    font-weight: 500;
-    font-size: 0.8em;
-    letter-spacing: .1em;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
 }
 
-.btn2{
-    border: 1px solid gray;
-    background-color: transparent;
-    color: white;
-    width: 110px;
-    height: 50px;
-    border-radius: 40px;
-    font-weight: 500;
-    font-size: 0.8em;
-    letter-spacing: .1em;
-    margin-top: 2em;
-}
-
-.btn1:active, .btn2:active{
-    outline: 2px solid rgb(80, 150, 255);
-}
-
-.image-bx{
-    width: 60%;
-    height: 90vh;
-    /* background-color: rgba(255, 255, 255, 0.096); */
-    float: right;
-
-    background-image: url(Image/bg_1.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: bottom;
+.btn:active{
+    outline: 2px solid rgb(48, 151, 235);
 }
